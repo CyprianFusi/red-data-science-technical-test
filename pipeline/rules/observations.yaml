@@ -1,0 +1,18 @@
+incident:
+  - [stood down, status, closed]
+  - [closed, status, closed]
+  - [ongoing, status, active]
+  - [monitoring, status, monitoring]
+  - [escalated, status, escalated]
+site:
+  - [reopened, status, open]
+  - [re-opened, status, open]
+  - [closed, status, closed]
+  - [flooded, status, affected]
+  - [restored, status, restored]
+organisation:
+  - [stood down, involvement, stood_down]
+  - [deployed, involvement, deployed]
+lrf:
+  - [activated, involvement, activated]
+  - [stood down, involvement, stood_down]
