@@ -67,3 +67,24 @@ def test_write_output_also_dumps_csv_tables(tmp_path):
     with open(csv_dir / "entities.csv", newline="") as fh:
         rows = list(csv.DictReader(fh))
     assert rows[0]["id"] == "SITE-0001"
+
+
+def test_csv_dump_neutralizes_formula_injection_prefixes(tmp_path):
+    out_dir = tmp_path / "out"
+    email = _sample_email(tmp_path)
+    dangerous_entity = ResolvedEntity("SITE-9999", "site", "=cmd|'/c calc'!A1", is_new=True)
+
+    write_output(
+        out_dir,
+        emails=[email],
+        entities=[dangerous_entity],
+        aliases=[],
+        first_seen={"SITE-9999": "email-1.eml"},
+        relations=[],
+        observations=[],
+    )
+
+    with open(out_dir / "csv" / "entities.csv", newline="") as fh:
+        rows = list(csv.DictReader(fh))
+    assert rows[0]["canonical_name"] == "'=cmd|'/c calc'!A1"
+    assert not rows[0]["canonical_name"].startswith(("=", "+", "-", "@"))

@@ -98,6 +98,15 @@ def write_output(
     return db_path
 
 
+_FORMULA_TRIGGER_CHARS = ("=", "+", "-", "@", "\t", "\r")
+
+
+def _neutralize_formula_cell(value):
+    if isinstance(value, str) and value.startswith(_FORMULA_TRIGGER_CHARS):
+        return "'" + value
+    return value
+
+
 def _dump_csv(conn: sqlite3.Connection, csv_dir: Path) -> None:
     csv_dir.mkdir(parents=True, exist_ok=True)
     for table in ["source_emails", "entities", "entity_aliases", "relations", "observations"]:
@@ -106,4 +115,5 @@ def _dump_csv(conn: sqlite3.Connection, csv_dir: Path) -> None:
         with open(csv_dir / f"{table}.csv", "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
             writer.writerow(columns)
-            writer.writerows(cursor.fetchall())
+            for row in cursor.fetchall():
+                writer.writerow([_neutralize_formula_cell(v) for v in row])
