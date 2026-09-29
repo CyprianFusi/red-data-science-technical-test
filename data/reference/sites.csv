@@ -1,0 +1,131 @@
+site_id,name,aliases,site_type,locality
+SITE-0001,A585 Fleetwood to M55,A585,road,Poulton-le-Fylde
+SITE-0002,A590 Ulverston to Barrow,A590,road,Ulverston
+SITE-0003,A591 Keswick to Grasmere,A591 Thirlmere,road,Thirlmere
+SITE-0004,A595 Whitehaven to Cockermouth,A595,road,Distington
+SITE-0005,A6 Garstang to Lancaster,,road,Garstang
+SITE-0006,A6 Shap summit,,road,Shap
+SITE-0007,A65 Kirkby Lonsdale to Settle,A65,road,Kirkby Lonsdale
+SITE-0008,A66 Keswick to Penrith,,road,Threlkeld
+SITE-0009,A66 Penrith to Brough,,road,Appleby-in-Westmorland
+SITE-0010,A683 Lancaster to Kirkby Lonsdale,A683,road,Caton
+SITE-0011,A69 Carlisle to Hexham,A69,road,Brampton
+SITE-0012,A7 Carlisle to Longtown,,road,Longtown
+SITE-0013,Alston,,settlement,Alston
+SITE-0014,Ambleside,,settlement,Ambleside
+SITE-0015,Appleby-in-Westmorland,,settlement,Appleby-in-Westmorland
+SITE-0016,Barrow-in-Furness,Barrow,settlement,Barrow-in-Furness
+SITE-0017,Bay View Care Home,,care_home,Morecambe
+SITE-0018,Birkett Moor Water Treatment Works,Birkett Moor WTW,water_treatment_works,Kendal
+SITE-0019,Blackburn,,settlement,Blackburn
+SITE-0020,Blackpool,,settlement,Blackpool
+SITE-0021,Braithwaite,,settlement,Braithwaite
+SITE-0022,Braithwaite Village Hall,,village_hall,Braithwaite
+SITE-0023,Brampton,,settlement,Brampton
+SITE-0024,Burnley,,settlement,Burnley
+SITE-0025,Carlisle,,settlement,Carlisle
+SITE-0026,Carnforth,,settlement,Carnforth
+SITE-0027,Carnforth Primary Substation,,substation,Carnforth
+SITE-0028,Caton,,settlement,Caton
+SITE-0029,Chorley,,settlement,Chorley
+SITE-0030,Clitheroe,,settlement,Clitheroe
+SITE-0031,Cockermouth,,settlement,Cockermouth
+SITE-0032,Cockermouth School,,school,Cockermouth
+SITE-0033,Coniston,,settlement,Coniston
+SITE-0034,Cumberland Infirmary,,hospital,Carlisle
+SITE-0035,Cumbrian Coast Line,,rail_line,
+SITE-0036,Derwent View Care Home,,care_home,Keswick
+SITE-0037,Devil's Bridge,,bridge,Kirkby Lonsdale
+SITE-0038,Eamont Bridge,,settlement,Eamont Bridge
+SITE-0039,Eamont Moor Water Treatment Works,Eamont Moor WTW,water_treatment_works,Penrith
+SITE-0040,Eden Bridge,,bridge,Carlisle
+SITE-0041,Egremont,,settlement,Egremont
+SITE-0042,Fellside Care Home,,care_home,Cockermouth
+SITE-0043,Fellside Lodge,,care_home,Kendal
+SITE-0044,Fleetwood,,settlement,Fleetwood
+SITE-0045,Furness General Hospital,,hospital,Barrow-in-Furness
+SITE-0046,Furness Line,,rail_line,
+SITE-0047,Galgate,,settlement,Galgate
+SITE-0048,Garstang,,settlement,Garstang
+SITE-0049,Garstang Community Academy,,school,Garstang
+SITE-0050,Glenridding,,settlement,Glenridding
+SITE-0051,Grange-over-Sands,,settlement,Grange-over-Sands
+SITE-0052,Haltwhistle,,settlement,Haltwhistle
+SITE-0053,Harraby Community Centre,,community_centre,Carlisle
+SITE-0054,Hebden Bridge,,settlement,Hebden Bridge
+SITE-0055,Hexham,,settlement,Hexham
+SITE-0056,Heysham,,settlement,Heysham
+SITE-0057,Hollins Moor Water Treatment Works,Hollins Moor WTW,water_treatment_works,Lancaster
+SITE-0058,Hornby,,settlement,Hornby
+SITE-0059,Kendal,,settlement,Kendal
+SITE-0060,Kendal Leisure Centre,,leisure_centre,Kendal
+SITE-0061,Keswick,,settlement,Keswick
+SITE-0062,Keswick Community Centre,,community_centre,Keswick
+SITE-0063,Keswick Community Hospital,,hospital,Keswick
+SITE-0064,Keswick Primary Substation,,substation,Keswick
+SITE-0065,Keswick School,,school,Keswick
+SITE-0066,Kirkbie Kendal School,,school,Kendal
+SITE-0067,Kirkby Lonsdale,,settlement,Kirkby Lonsdale
+SITE-0068,Kirkby Stephen,,settlement,Kirkby Stephen
+SITE-0069,Knott End-on-Sea,Knott End,settlement,Knott End-on-Sea
+SITE-0070,Lakes Line (Oxenholme to Windermere),Lakes Line,rail_line,
+SITE-0071,Lancaster,,settlement,Lancaster
+SITE-0072,Lancaster Bulk Supply Point,,substation,Lancaster
+SITE-0073,Longridge,,settlement,Longridge
+SITE-0074,Longtown,,settlement,Longtown
+SITE-0075,Lytham St Annes,,settlement,Lytham St Annes
+SITE-0076,M55 Junction 1,,road,Preston
+SITE-0077,M6 Junction 34,M6 J34,road,Lancaster
+SITE-0078,M6 Junction 36,M6 J36,road,Kendal
+SITE-0079,M6 Junction 40,M6 J40,road,Penrith
+SITE-0080,M6 Junction 43,M6 J43,road,Carlisle
+SITE-0081,Maryport,,settlement,Maryport
+SITE-0082,Millennium Bridge,,bridge,Lancaster
+SITE-0083,Millom,,settlement,Millom
+SITE-0084,Morecambe,,settlement,Morecambe
+SITE-0085,Morecambe Bay Academy,,school,Morecambe
+SITE-0086,Northside Bridge,,bridge,Workington
+SITE-0087,Ormskirk,,settlement,Ormskirk
+SITE-0088,Patterdale,,settlement,Patterdale
+SITE-0089,Patterdale Village Hall,,village_hall,Patterdale
+SITE-0090,Penrith,,settlement,Penrith
+SITE-0091,Penrith Community Hospital,,hospital,Penrith
+SITE-0092,Penrith Leisure Centre,,leisure_centre,Penrith
+SITE-0093,Penrith Primary Substation,,substation,Penrith
+SITE-0094,Pooley Bridge,,settlement,Pooley Bridge
+SITE-0095,Pooley Bridge crossing,,bridge,Pooley Bridge
+SITE-0096,Poulton-le-Fylde,,settlement,Poulton-le-Fylde
+SITE-0097,Preesall,,settlement,Preesall
+SITE-0098,Preston,,settlement,Preston
+SITE-0099,Queen Elizabeth Grammar School,QEGS,school,Penrith
+SITE-0100,Queen Elizabeth School,,school,Kirkby Lonsdale
+SITE-0101,Richard Rose Central Academy,,school,Carlisle
+SITE-0102,Riverside Community Centre,,community_centre,Carlisle
+SITE-0103,Riverside Community Centre,,community_centre,Kendal
+SITE-0104,Royal Lancaster Infirmary,RLI,hospital,Lancaster
+SITE-0105,Salt Ayre Leisure Centre,,leisure_centre,Lancaster
+SITE-0106,Sedbergh,,settlement,Sedbergh
+SITE-0107,Settle,,settlement,Settle
+SITE-0108,Settle-Carlisle Line,Settle to Carlisle railway,rail_line,
+SITE-0109,Shap,,settlement,Shap
+SITE-0110,Silloth,,settlement,Silloth
+SITE-0111,Silverdale,,settlement,Silverdale
+SITE-0112,Skerton Bridge,,bridge,Lancaster
+SITE-0113,Skipton,,settlement,Skipton
+SITE-0114,Stainton,,settlement,Stainton
+SITE-0115,The Sands Centre,Sands Centre,leisure_centre,Carlisle
+SITE-0116,Threlkeld,,settlement,Threlkeld
+SITE-0117,Threlkeld Village Hall,,village_hall,Threlkeld
+SITE-0118,Todmorden,,settlement,Todmorden
+SITE-0119,Ullswater Community College,,school,Penrith
+SITE-0120,Ulverston,,settlement,Ulverston
+SITE-0121,West Coast Main Line (Carlisle to Lancaster),WCML,rail_line,
+SITE-0122,West Cumberland Hospital,,hospital,Whitehaven
+SITE-0123,West End Community Centre,,community_centre,Morecambe
+SITE-0124,Westmorland General Hospital,,hospital,Kendal
+SITE-0125,Whitehaven,,settlement,Whitehaven
+SITE-0126,Wigton,,settlement,Wigton
+SITE-0127,Windermere,,settlement,Windermere
+SITE-0128,Workington,,settlement,Workington
+SITE-0129,Workington Academy,,school,Workington
+SITE-0130,Workington Leisure Centre,,leisure_centre,Workington

@@ -1,0 +1,27 @@
+incident_id,name,aliases,incident_type,start_date,status
+INC-001,Storm Aldo,,severe_weather,2019-11-02,closed
+INC-002,Storm Brianna,,severe_weather,2020-02-14,closed
+INC-003,Keswick flooding,Keswick floods 2020,flooding,2020-02-15,closed
+INC-004,Storm Cedric,,severe_weather,2021-01-19,closed
+INC-005,M6 Shap snow closure,,transport,2021-01-28,closed
+INC-006,Penrith water supply interruption,Penrith outage 2021,water_supply,2021-08-19,closed
+INC-007,Preston surface water flooding,,flooding,2021-10-05,closed
+INC-008,Workington industrial fire,,industrial,2022-06-30,closed
+INC-009,Blackpool extreme heat response,,public_health,2022-07-18,closed
+INC-010,Ulverston water contamination,,water_supply,2022-09-14,closed
+INC-011,Carlisle flooding,,flooding,2022-10-28,closed
+INC-012,Fleetwood coastal overtopping,,coastal,2022-11-21,closed
+INC-013,Storm Dora,,severe_weather,2022-12-06,closed
+INC-014,Kendal power outage,,power_outage,2022-12-12,closed
+INC-015,A66 Stainmore landslip,,landslip,2023-03-09,closed
+INC-016,Leeds trunk main burst,,water_supply,2023-06-27,closed
+INC-017,Longridge Fell moorland fire,,wildfire,2023-07-22,closed
+INC-018,Appleby flooding,River Eden flooding Appleby,flooding,2023-11-17,closed
+INC-019,Lancaster power outage,,power_outage,2023-12-04,closed
+INC-020,Morecambe tidal surge,Morecambe Bay surge,coastal,2024-01-03,closed
+INC-021,Northumberland heavy snow,,severe_weather,2024-01-16,closed
+INC-022,Storm Fenwick,Fenwick,severe_weather,2024-02-08,closed
+INC-023,Barrow gas leak,,industrial,2024-05-16,closed
+INC-024,Calder Valley flooding,,flooding,2024-12-01,closed
+INC-025,Storm Gethin,,severe_weather,2025-01-23,closed
+INC-026,York river flooding,,flooding,2025-02-11,closed
