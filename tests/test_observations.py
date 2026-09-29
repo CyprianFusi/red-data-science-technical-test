@@ -51,6 +51,24 @@ def test_observation_carries_observed_at_and_source_email():
     assert observations[0].source_email == "email-1.eml"
 
 
+def test_observation_window_does_not_cross_a_newline_into_the_next_bullet():
+    """Regression: a sitrep listing several sites, one per line, must not
+    let one site's keyword bleed into a neighbouring site's status."""
+    site_a_name = "A591 Keswick to Grasmere"
+    site_b_name = "Northside Bridge"
+    text = f"- {site_a_name}: reopened\n- {site_b_name}, Workington: closed\n"
+    site_a_start = text.index(site_a_name)
+    site_b_start = text.index(site_b_name)
+
+    site_a = ResolvedEntity("SITE-0001", "site", site_a_name, is_new=False)
+    mentions = [
+        (Mention("site", site_a_name, site_a_start, site_a_start + len(site_a_name), "SITE-0001"), site_a)
+    ]
+    observations = extract_observations(text, mentions, RULES, "email-1.eml", None)
+    values = {o.value for o in observations}
+    assert values == {"open"}
+
+
 def test_load_observation_rules_reads_yaml(tmp_path):
     rules_file = tmp_path / "observations.yaml"
     rules_file.write_text("site:\n  - [closed, status, closed]\n")

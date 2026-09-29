@@ -7,10 +7,14 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
+import re
+
 import yaml
 
 from pipeline.extract import Mention
 from pipeline.resolve import ResolvedEntity
+
+_BULLET_BOUNDARY_RE = re.compile(r"\n[ \t]*(?:[-*]|\d+[.)])[ \t]")
 
 RELATION_ENTITY_TYPES: dict[str, tuple[str, str]] = {
     "AFFECTS": ("incident", "site"),
@@ -39,6 +43,12 @@ def _window(text: str, a: Mention, b: Mention, window_chars: int) -> str | None:
     lo, hi = min(a.start, b.start), max(a.end, b.end)
     if hi - lo > window_chars:
         return None
+    # A sitrep-style bulleted/numbered list item boundary between the two
+    # mentions means they belong to different list entries (e.g. two
+    # separate "- Site: state (run by Org)" lines) even though they fall
+    # inside the character-window gate above — do not link across it.
+    if _BULLET_BOUNDARY_RE.search(text[lo:hi]):
+        return None
     return text[max(0, lo - 20): min(len(text), hi + 20)]
 
 
@@ -51,6 +61,7 @@ def extract_relations(
     window_chars: int = 400,
 ) -> list[Relation]:
     relations: list[Relation] = []
+    seen: set[tuple[str, str, str]] = set()
 
     for i, (mention_a, entity_a) in enumerate(resolved_mentions):
         for mention_b, entity_b in resolved_mentions[i + 1:]:
@@ -70,6 +81,11 @@ def extract_relations(
                     from_entity, to_entity = entity_b, entity_a
                 else:
                     continue
+
+                dedup_key = (relation_type, from_entity.entity_id, to_entity.entity_id)
+                if dedup_key in seen:
+                    continue
+                seen.add(dedup_key)
 
                 relations.append(
                     Relation(relation_type, from_entity, to_entity, source_email, observed_at, snippet.strip())

@@ -45,6 +45,17 @@ def extract_observations(
 
         lo = max(0, mention.start - window_chars)
         hi = min(len(text), mention.end + window_chars)
+
+        # Don't let the window cross into a neighbouring line: sitrep-style
+        # emails list one entity's status per line/bullet, and a raw
+        # character window bleeds a neighbour's keyword onto this entity.
+        line_start = text.rfind("\n", 0, mention.start) + 1
+        line_end = text.find("\n", mention.end)
+        if line_end == -1:
+            line_end = len(text)
+        lo = max(lo, line_start)
+        hi = min(hi, line_end)
+
         window = text[lo:hi]
         window_lower = window.lower()
 

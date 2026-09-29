@@ -1,6 +1,6 @@
 incident:
   - [stood down, status, closed]
-  - [closed, status, closed]
+  - [incident closed, status, closed]
   - [ongoing, status, active]
   - [monitoring, status, monitoring]
   - [escalated, status, escalated]
