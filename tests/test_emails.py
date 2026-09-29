@@ -1,5 +1,5 @@
 from pathlib import Path
-from datetime import timezone
+from datetime import datetime, timezone
 
 from pipeline.emails import parse_eml, parse_eml_folder
 
@@ -36,8 +36,34 @@ def test_parse_email_with_no_date_header_returns_none():
     assert "Body with no Date header" in parsed.text
 
 
+def test_parse_normalizes_non_utc_offset_to_utc():
+    parsed = parse_eml(FIXTURES / "bst_offset.eml")
+    assert parsed.date == datetime(2026, 1, 15, 9, 40, tzinfo=timezone.utc)
+    # Instant equality alone isn't enough: the ISO string written to
+    # storage must also be UTC, since observation ordering (`ORDER BY
+    # observed_at`) is a lexicographic string comparison, not a proper
+    # datetime comparison, and a +01:00 offset would sort wrongly next
+    # to a +00:00 one.
+    assert parsed.date.utcoffset().total_seconds() == 0
+    assert parsed.date.isoformat() == "2026-01-15T09:40:00+00:00"
+
+
+def test_parse_strips_quoted_reply_lines():
+    parsed = parse_eml(FIXTURES / "quoted_reply.eml")
+    assert "Received with thanks." in parsed.text
+    assert "SITREP 5" not in parsed.text
+    assert "Incident status: ACTIVE" not in parsed.text
+
+
 def test_parse_eml_folder_returns_all_files_sorted():
     parsed = parse_eml_folder(FIXTURES)
     assert [p.path.name for p in parsed] == sorted(
-        ["plain_simple.eml", "multipart_alt.eml", "html_only.eml", "no_date.eml"]
+        [
+            "plain_simple.eml",
+            "multipart_alt.eml",
+            "html_only.eml",
+            "no_date.eml",
+            "quoted_reply.eml",
+            "bst_offset.eml",
+        ]
     )

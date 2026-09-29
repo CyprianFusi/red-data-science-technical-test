@@ -1,0 +1,9 @@
+From: Ops <ops@example.com>
+To: Duty <duty@example.com>
+Date: Thu, 15 Jan 2026 10:40:00 +0100
+Subject: BST offset test
+Message-ID: <bst-offset-1@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Body with a non-UTC offset Date header.

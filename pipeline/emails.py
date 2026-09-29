@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from email import policy
 from email.parser import BytesParser
 from email.utils import parsedate_to_datetime
@@ -38,6 +38,16 @@ def _html_to_text(html: str) -> str:
     return extractor.get_text()
 
 
+def _strip_quoted_lines(text: str) -> str:
+    # A line quoted from an earlier message in a reply chain ("> ...",
+    # possibly nested ">> ...") reports a status as of that earlier
+    # message's date, not this email's Date header — extracting it here
+    # would attribute a stale report to a later timestamp.
+    return "\n".join(
+        line for line in text.split("\n") if not line.lstrip().startswith(">")
+    )
+
+
 def parse_eml(path: Path) -> ParsedEmail:
     with open(path, "rb") as fh:
         msg = BytesParser(policy=policy.default).parse(fh)
@@ -48,6 +58,7 @@ def parse_eml(path: Path) -> ParsedEmail:
     else:
         content = body_part.get_content()
         text = _html_to_text(content) if body_part.get_content_type() == "text/html" else content
+        text = _strip_quoted_lines(text)
 
     date_header = msg.get("Date")
     date: datetime | None
@@ -55,6 +66,11 @@ def parse_eml(path: Path) -> ParsedEmail:
         date = parsedate_to_datetime(date_header) if date_header else None
     except (TypeError, ValueError):
         date = None
+    if date is not None:
+        # Normalize to UTC: observations are ordered with a lexicographic
+        # string comparison on the stored ISO timestamp, which only sorts
+        # correctly across emails if every timestamp uses the same offset.
+        date = date.astimezone(timezone.utc) if date.tzinfo else date.replace(tzinfo=timezone.utc)
 
     return ParsedEmail(
         path=path,
