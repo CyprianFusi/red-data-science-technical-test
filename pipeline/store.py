@@ -12,8 +12,8 @@ from pipeline.resolve import ResolvedEntity
 
 _SCHEMA = """
 CREATE TABLE source_emails (
-    message_id TEXT PRIMARY KEY,
-    path TEXT NOT NULL,
+    path TEXT PRIMARY KEY,
+    message_id TEXT,
     from_addr TEXT,
     date TEXT,
     subject TEXT
@@ -73,7 +73,7 @@ def write_output(
 
     conn.executemany(
         "INSERT INTO source_emails VALUES (?, ?, ?, ?, ?)",
-        [(e.message_id, str(e.path), e.from_addr, _iso(e.date), e.subject) for e in emails],
+        [(str(e.path), e.message_id, e.from_addr, _iso(e.date), e.subject) for e in emails],
     )
     conn.executemany(
         "INSERT INTO entities VALUES (?, ?, ?, ?, ?)",

@@ -30,7 +30,11 @@ def run(emails_dir: Path, reference_dir: Path, out_dir: Path) -> dict:
     all_observations = []
 
     for email in parsed_emails:
-        source_email = email.message_id or str(email.path.name)
+        # Keyed on path, not Message-ID: the header can be missing or (across
+        # a forwarded copy) duplicated, but each .eml file's path is always
+        # unique, and this key must match source_emails' primary key in
+        # pipeline.store so relation/observation provenance always joins.
+        source_email = str(email.path)
         mentions = find_mentions(email.text, gazetteers)
         resolved = [(mention, resolver.resolve(mention, source_email)) for mention in mentions]
 

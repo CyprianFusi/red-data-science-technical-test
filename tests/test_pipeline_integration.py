@@ -72,6 +72,38 @@ def test_run_does_not_crash_on_email_with_no_entities(tmp_path):
     assert summary["entities"] == 0
 
 
+def test_run_does_not_crash_on_emails_with_missing_or_duplicate_message_ids(tmp_path):
+    emails_dir = tmp_path / "emails"
+    reference_dir = tmp_path / "reference"
+    out_dir = tmp_path / "out"
+
+    # Neither email has a Message-ID header, so a naive "message_id or ..."
+    # key collides across both when writing source_emails.
+    _write(
+        emails_dir / "e1.eml",
+        "From: a@b.com\nTo: c@d.com\nDate: Mon, 12 Jan 2026 10:00:00 +0000\n"
+        "Subject: First\nContent-Type: text/plain; charset=\"utf-8\"\n\n"
+        "Storm Fenella update one.\n",
+    )
+    _write(
+        emails_dir / "e2.eml",
+        "From: a@b.com\nTo: c@d.com\nDate: Tue, 13 Jan 2026 09:00:00 +0000\n"
+        "Subject: Second\nContent-Type: text/plain; charset=\"utf-8\"\n\n"
+        "Storm Fenella update two.\n",
+    )
+    _write(reference_dir / "lrfs.csv", "lrf_id,name,aliases\nLRF-01,Cumbria Resilience Forum,\n")
+    _write(reference_dir / "incidents.csv", "incident_id,name,aliases,incident_type,start_date,status\nINC-001,Storm Fenella,,severe_weather,2026-01-12,active\n")
+    _write(reference_dir / "organisations.csv", "org_id,name,aliases,org_type,notes\n")
+    _write(reference_dir / "sites.csv", "site_id,name,aliases,site_type,locality\n")
+
+    summary = run(emails_dir, reference_dir, out_dir)
+    assert summary["emails"] == 2
+
+    conn = sqlite3.connect(out_dir / "pipeline.db")
+    assert conn.execute("SELECT COUNT(*) FROM source_emails").fetchone()[0] == 2
+    conn.close()
+
+
 def test_pipeline_source_has_no_hardcoded_scenario_names():
     """Guards spec Review Focus #5: resolution/extraction must be driven
     entirely by --reference and rules/*.yaml, not by this scenario's
