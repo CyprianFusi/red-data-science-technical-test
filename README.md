@@ -41,8 +41,8 @@ uv run pytest
 Measured on the provided dataset (271 emails, Windows 11, Python 3.13.9, no GPU — pure-CPU rule-based processing):
 
 ```
-Processed 271 emails -> 85 entities, 1725 relations, 660 observations. Output: output
-real    0m2.0s
+Processed 271 emails -> 76 entities, 145 relations, 224 observations. Output: output
+real    0m2.2s
 ```
 
 ~2 seconds, well inside the 10-minute budget. The approach is linear in the number of emails and does no model inference, so the private dataset (similar email count) should run in a comparable time.
@@ -65,7 +65,7 @@ The relation and observation extraction rules are the designated extensible stag
 | New-entity regex fallback (`FALLBACK_PATTERNS` in `pipeline/extract.py`) | Partly | Patterns key on generic UK-incident vocabulary (road-number format `A\d+`, "...Council", "...Local Resilience Forum", "Storm <Name>", "...Rest Centre"/"...Treatment Works" etc.), not this scenario's specific names, so they should still fire on a different region. Precision will likely be lower than the gazetteer path since these are heuristics, not exact matches — expect more borderline/incorrect new entities than on the provided dataset. |
 | Relation cue-keyword table (`pipeline/rules/relations.yaml`) | Yes, with caveats | Keywords are generic incident-response vocabulary ("closed", "flooded", "Lead:", "run by", "RESPONDING", etc.), not scenario-specific names, so they should transfer. Coverage was tuned against this dataset's phrasing (see "Assumptions" below); a private dataset with different sitrep conventions may need the keyword list extended the same way — this is a YAML edit, not code. |
 | Observation keyword table (`pipeline/rules/observations.yaml`) | Yes, with caveats | Same reasoning as relations: generic status vocabulary, same caveat about dataset-specific phrasing needing keyword additions over time. |
-| Co-occurrence relation/observation windowing | Yes | Window size is a fixed character count, not tied to this scenario's text. |
+| Co-occurrence relation/observation windowing | Yes | Window size is a fixed character count clamped to the mention's own line/bullet (and, for relations, blocked from crossing a bulleted/numbered list boundary) — none of that logic is tied to this scenario's text. |
 | Storage (`pipeline/store.py`) | Yes | Schema and CSV export are entity-type-agnostic. |
 
 Nothing in `pipeline/` hardcodes this scenario's entity names, IDs, or region — everything scenario-specific lives in `data/` and is passed via `--emails`/`--reference`, which is exactly what changes for the private dataset.
@@ -74,7 +74,7 @@ Nothing in `pipeline/` hardcodes this scenario's entity names, IDs, or region �
 
 Where the brief left a design choice open, these are the choices made (see `DESIGN_NOTE.md` for the fuller reasoning):
 
-- **Relation/observation "co-occurrence" is windowed by character count**, not by sentence or paragraph boundaries: relations use a 400-character window around a candidate entity pair, observations use a 120-character window around a single mention. This is simple and fast but can produce false positives when an email densely lists several sites/organisations close together (see `DESIGN_NOTE.md` for the trade-off).
+- **Relation/observation "co-occurrence" is windowed by character count, clamped to a line/bullet**, not by full sentence or paragraph boundaries: relations use a 400-character gate around a candidate entity pair and are additionally blocked from crossing a bulleted/numbered list-item boundary (fixing an early over-triggering bug — see `DESIGN_NOTE.md`); observations use a 120-character window clamped to the mention's own line. Two facts on the *same* line about *different* entities (e.g. an email subject "Cockermouth School closed and A591 reopened") can still both attach to whichever entity is nearest — a known residual limitation, not a bug, and a minority case in practice (5 same-email status conflicts remained on the provided dataset, down from 103 before this fix).
 - **Fuzzy-match threshold is 90** (out of 100, `rapidfuzz.fuzz.token_sort_ratio`) for both matching an unresolved mention against the reference gazetteer and deduplicating repeated new entities. Chosen to tolerate minor typos/wording variants while avoiding false merges of distinct entities.
 - **New entity IDs** are minted as `<TYPE>-NEW-<counter>` (e.g. `SITE-NEW-001`), scoped per pipeline run — they are not stable across separate runs of the pipeline on the same data, since there is no cross-run identity store. Re-running produces the same *set* of new entities but not guaranteed identical IDs run-to-run relative to any external system.
 - **Relation and observation cue keywords started from a generic guess and were corrected against the real dataset** during implementation (see `DESIGN_NOTE.md` §3): an initial pass produced zero `COORDINATED_BY`/`RESPONDS_TO`/`OPERATES` relations; inspecting the actual emails showed the dataset consistently uses "Lead:", "RESPONDING", and "run by" rather than the words first guessed. The keyword tables were expanded accordingly. This is disclosed rather than hidden because it is exactly the kind of dataset-specific tuning a private dataset may also need — see the Private Dataset table above.
@@ -82,7 +82,7 @@ Where the brief left a design choice open, these are the choices made (see `DESI
 
 ## How I used my time
 
-Roughly 4 hours, in this order:
+Roughly 4 hours of design/implementation as originally scoped, plus a further review-and-fix pass (see below) that materially improved output quality:
 
 1. Reading the brief, inspecting the data, and confirming the CLI contract (~15 min).
 2. Design: architecture, entity resolution approach, storage format, deciding against a local NER/LLM model in favour of gazetteer + rules given the 10-minute/CPU-only/no-network constraints (~20 min).
@@ -90,9 +90,10 @@ Roughly 4 hours, in this order:
 4. Running on the real dataset, investigating why three of the four relation types never fired, and expanding the cue-keyword YAML accordingly (~20 min).
 5. Addressing a CSV formula-injection finding in the CSV export path (~10 min).
 6. Writing this README and `DESIGN_NOTE.md` (~25 min).
+7. A fresh-context code review of the whole branch, then a fix pass for everything it found at Critical/Important severity (a newline bug that let fallback regexes absorb email signature blocks into entity names; a missing/duplicate Message-ID crash; relation/observation windows bleeding across sitrep bullets and producing 1511 near-duplicate `OPERATES` relations from one keyword; quoted reply text being re-timestamped; one malformed email aborting the whole run; a duplicate reference name resolved by silent CSV row order; a gazetteer match-boundary bug; non-UTC dates not normalized) — each fixed test-first and re-verified against the real dataset.
 
-Not finished / would do with more time: a labelled evaluation sample (see `DESIGN_NOTE.md` §2), coreference resolution across pronouns/implicit references, and tightening the co-occurrence window to reduce over-triggering of `OPERATES` in dense sitrep emails (see `DESIGN_NOTE.md` §3).
+Not finished / would do with more time: a labelled evaluation sample (see `DESIGN_NOTE.md` §2), coreference resolution across pronouns/implicit references, and clause-level (not just line-level) splitting for the residual same-line-different-entity ambiguity noted in Assumptions above.
 
 ## Use of AI coding assistants
 
-This entire pipeline was designed and implemented with Claude Code (Anthropic's CLI coding agent) in an interactive session: brainstorming the architecture, writing the design spec and implementation plan, and implementing every module test-first, task by task, with the emails/reference data inspected directly at each design decision point. All code was written by the assistant under direct human review and direction at each stage (design approval, plan approval, and step-by-step execution); no code in `pipeline/` calls a hosted LLM or external API at run time — the assistant was used only during development, per §5.3 of the brief.
+This entire pipeline was designed and implemented with Claude Code (Anthropic's CLI coding agent) in an interactive session: brainstorming the architecture, writing the design spec and implementation plan, and implementing every module test-first, task by task, with the emails/reference data inspected directly at each design decision point. After the initial implementation, a fresh-context review pass (a separate Claude Code review agent, prompted to independently re-derive findings from the code and the real dataset rather than trust the implementation's own account) found the eight issues fixed in "How I used my time" step 7 above — it was given the chance to push back on prior design decisions and did (e.g. disagreeing with how a prior relation-keyword fix traded a recall problem for a precision one), which fed directly into the fix pass. All code was written by the assistant under direct human review and direction at each stage (design approval, plan approval, step-by-step execution, and review triage); no code in `pipeline/` calls a hosted LLM or external API at run time — the assistant was used only during development, per §5.3 of the brief.
