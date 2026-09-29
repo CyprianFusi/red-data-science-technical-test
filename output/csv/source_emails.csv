@@ -1,0 +1,272 @@
+message_id,path,from_addr,date,subject
+e52c9ca532e806e09ad9@cumberland-council.example,data\emails\000d342976f4.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-15T10:40:00+00:00,RE: Complaint from resident - rest centre
+d5668286777db5602754@cumbria-lrf.example,data\emails\0370e6a73a6b.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T05:45:00+00:00,RE: Vulnerable residents - Cockermouth
+4b9d2de5bbcb4f0ca853@lancsfire.example,data\emails\055478c3ed6e.eml,Dan Rigg <dan.rigg@lancsfire.example>,2026-01-14T15:00:00+00:00,Lancashire Fire and Rescue Service - Storm Fenella summary
+d36e1e85a9db8e59a25d@westmorlandandfurness.example,data\emails\06cea8dc9c50.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T13:00:00+00:00,RE: Westmorland and Furness update - STORM FENELLA
+c6d4b5613b17c4878fbb@lancashire-rf.example,data\emails\06ebcaf6afc8.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-13T20:30:00+00:00,RE: West End Community Centre rest centre open - Storm Fenella
+1a0f95123a587344232c@environment-agency.example,data\emails\073b8248c849.eml,Owen Hartley <owen.hartley@environment-agency.example>,2026-01-15T12:00:00+00:00,River levels falling - Storm Fenella
+7ba14f1b3a003244c980@lancashire-rf.example,data\emails\08deb2e4e6eb.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-16T13:30:00+00:00,Lancashire - moving to recovery - Storm Fenella
+c36a74b39d36c12756a3@cumbria-police.example,data\emails\08f58c0aeda5.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-15T14:38:00+00:00,FW: RED National Sitrep 4 - 15/01/2026
+4c85dc7968382da8cf4c@cumberland-council.example,data\emails\0b2687311b6a.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-15T13:25:00+00:00,RE: SITREP 7 - Storm Fenella - 15 Jan 1300
+c100b8ffd6ff4b00f04e@westmorlandandfurness.example,data\emails\0c61b2829e5d.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-15T18:40:00+00:00,RE: SITREP 8 - Storm Fenella response - 15 Jan 1800
+76bbc67988560f7f472a@cumberland-council.example,data\emails\0c6f887195f2.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-17T11:30:00+00:00,Fellside Care Home - residents returning
+aba7ad36462310f2d485@lancashire-rf.example,data\emails\0cc8d0c8bc90.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-15T07:56:00+00:00,FW: URGENT - water quality - Eamont Moor WTW
+0fce5087c050188f4dc5@uuplc.example,data\emails\0d6e5cc2db65.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-15T11:10:00+00:00,Boil water notice issued - Penrith boil water incident
+f86b9d418ee6efba1e45@metoffice.example,data\emails\0dfe5782e2d4.eml,Claire Bentham <claire.bentham@metoffice.example>,2026-01-15T10:00:00+00:00,Warnings downgraded - Fenella
+596f82070bc61dac2710@cumberland-council.example,data\emails\0ed572112c3c.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-15T18:00:00+00:00,RE: A591 Keswick to Grasmere - latest?
+6b799691479e1e84ecb8@westmorlandandfurness.example,data\emails\1039d764051a.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-13T22:19:00+00:00,FW: Morecambe overtopping - LFRS
+a470c5038282150e5c9d@mhclg.example,data\emails\10f443a871d1.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-14T13:20:00+00:00,RE: COBR Unit summary - 14 Jan
+5e0e75bc58003b259be9@ukhsa.example,data\emails\125aa84d5eda.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-17T17:30:00+00:00,RE: SITREP 6 - Penrith drinking water incident - 17 Jan 1700
+ebdb0852fed6d96b63b7@lancsfire.example,data\emails\1411f44f039c.eml,Dan Rigg <dan.rigg@lancsfire.example>,2026-01-13T21:40:00+00:00,Morecambe overtopping - LFRS
+274ba256205cb3f2dae1@lancashire-rf.example,data\emails\14f8e3793618.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-14T12:00:00+00:00,Lancashire LRF SITREP 3 - Storm Fenella
+908bd69f347e38c5099e@cumbria-police.example,data\emails\15ad44e58e83.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-15T12:41:00+00:00,FW: River levels falling - Storm Fenella
+45087c3e3815b6503351@lancashire-rf.example,data\emails\163a70c29c17.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-13T13:50:00+00:00,RE: Flood warnings issued - Storm Fenella
+e173df0f6313106552d8@cumbria-lrf.example,data\emails\16a24191aaed.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T08:55:00+00:00,RE: SITREP 9 - Storm Fenella - 16 Jan 0800
+36c0c74506654b3c8c80@cumberland-council.example,data\emails\19022373acf8.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-13T18:00:00+00:00,RE: A591 near Thirlmere - latest?
+f09e6beb1614080383e2@lancashire-rf.example,data\emails\198070941e41.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-12T09:12:00+00:00,RE: Amber warning - rain and wind - STORM FENELLA
+4a6deaff9854db40508a@uuplc.example,data\emails\19bec4e5673c.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-16T14:20:00+00:00,RE: UK Health Security Agency update - Eamont Moor water quality incident
+7803d96f76c0db2c85bf@westmorlandandfurness.example,data\emails\1a9575985a37.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-15T10:50:00+00:00,RE: Pooley Bridge crossing - latest? (Storm Fenella response)
+77c0ca3a336da6cdca55@cabinetoffice.example,data\emails\1b4437fee5a8.eml,Marcus Webb <marcus.webb@cabinetoffice.example>,2026-01-16T13:00:00+00:00,COBR Unit summary - 16 Jan
+29ca55a0d88a0f66798b@cumbria-lrf.example,data\emails\1be1a3814824.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T15:35:00+00:00,RE: Keswick School opened as rest centre - Fenella
+2b75d6a68c38b474e22d@westmorlandandfurness.example,data\emails\1c0b9181865e.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T11:30:00+00:00,RE: SITREP 3 - Eamont Moor water quality incident - 16 Jan 1100
+3e9d3159d84e72d2d92b@mhclg.example,data\emails\1c1d84f77e28.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-16T13:20:00+00:00,RE: COBR Unit summary - 16 Jan
+d2aa8c276b13b900a38b@cumbria-lrf.example,data\emails\1d18a4d7c159.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T17:55:00+00:00,RE: SITREP 11 - Storm Fenella - 16 Jan 1700
+111180ac8a515c42eeeb@cumbria-lrf.example,data\emails\1df2ba4c430e.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T11:00:00+00:00,SITREP 5 - Penrith water incident - 17 Jan 1100
+12934b8663747a513e34@uuplc.example,data\emails\1f79f753473b.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-15T14:20:00+00:00,Bottled water stations now open
+44ab303f5d4a33716afe@lancaster-council.example,data\emails\20d666173876.eml,Paul Stainton <paul.stainton@lancaster-council.example>,2026-01-16T16:10:00+00:00,West End Community Centre closed
+dbce49a610cfc846dec9@lancashire-rf.example,data\emails\21959cf28728.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-16T12:00:00+00:00,Lancs LRF SITREP 7 - STORM FENELLA
+437fddf81112227469f5@cumbria-lrf.example,data\emails\223698ae2683.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T12:00:00+00:00,SITREP 1 - Storm Fenella - 13 Jan 1200
+7c46cc02a3dffca89510@cumberland-council.example,data\emails\225d0cb5a40a.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T10:50:00+00:00,RE: the Northside bridge - latest? (STORM FENELLA)
+798003db85c5594bf0a6@cumberland-council.example,data\emails\238fd62a40fa.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T08:20:00+00:00,RE: Cumbria Constabulary - road closures and evacuations
+383a109e7ed725f23ea2@cumbria-lrf.example,data\emails\252218dc5877.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T08:00:00+00:00,RE: URGENT - water quality - Eamont Moor WTW
+c9024a62b9cc5f869aec@lancashire-rf.example,data\emails\25c65638bb24.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-14T19:00:00+00:00,Lancashire Local Resilience Forum SITREP 4 - Storm Fenella response
+e6be9febade137a73700@wyre-council.example,data\emails\27d89998ce91.eml,Ryan Postlethwaite <ryan.postlethwaite@wyre-council.example>,2026-01-14T09:30:00+00:00,RE: Coastal and river update - Lancashire
+28bd8d4c5972e8d93bad@mhclg.example,data\emails\27eb339fcf2f.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-15T16:20:00+00:00,RE: COBR Unit summary - 15 Jan
+41c60cc794b65d522454@lancashire-rf.example,data\emails\29b500d508d1.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-15T17:40:00+00:00,A591 Keswick to Grasmere - latest?
+86dabf1428acc94ad72a@nationalhighways.example,data\emails\29e00f4b85b0.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-13T17:00:00+00:00,Road network update - Fenella
+fd34ad2143266c814f4a@mhclg.example,data\emails\2a472cd7836c.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-12T16:00:00+00:00,RED National Sitrep 1 - 12/01/2026
+8e84dada6d8ac8bddf45@mhclg.example,data\emails\2a4b006fadef.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-17T08:00:00+00:00,RED National Sitrep 6 - 17/01/2026
+8159864f971cb774dd31@cumbria-lrf.example,data\emails\2c38c8a729cd.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T17:00:00+00:00,SITREP 4 - Penrith water contamination - 16 Jan 1700
+f462df78ef4b8fdce81d@cumbria-lrf.example,data\emails\2cad278cba0f.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T08:49:00+00:00,FW: RED National Sitrep 5 - 16/01/2026
+3a1f3cb3560774ebcd5a@lancashire-rf.example,data\emails\2cf571b59350.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-14T13:40:00+00:00,RE: Carnforth Primary Substation flooded
+a6c6f45c315d0635ac0b@redcross.example,data\emails\2cf7030fe5a7.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-16T17:12:00+00:00,FW: SITREP 11 - Storm Fenella - 16 Jan 1700
+b7cb894c049d46a478fa@mhclg.example,data\emails\2d147efa5108.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-14T08:00:00+00:00,RED National Sitrep 3 - 14/01/2026
+62c5290c4fafb93286bc@nwas.example,data\emails\2d90c05b3216.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T03:05:00+00:00,RE: Fellside Care Home evacuated - Storm Fenella
+3e307c34c623124ffa22@nationalhighways.example,data\emails\2eb1a35ae61e.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-17T08:50:00+00:00,RE: junction 40 of the M6 - latest?
+0e410c99dcd5f5d73a3f@redcross.example,data\emails\3096ba6cf654.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-14T11:15:00+00:00,A591 near Thirlmere - latest? (Storm Fenella response)
+f66313010804ea1c0fb6@lancashire-rf.example,data\emails\3127cffd4258.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-14T15:20:00+00:00,RE: Lancashire Fire and Rescue Service - Storm Fenella summary
+8574082e3c33702b31a1@networkrail.example,data\emails\330dc736b78c.eml,Ben Oduya <ben.oduya@networkrail.example>,2026-01-16T10:05:00+00:00,RE: WCML - latest? (Storm Fenella)
+a255ca03a8609fd14ddb@westmorlandandfurness.example,data\emails\34894694f696.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T17:07:00+00:00,FW: West End Community Centre closed
+d9f0a65f8ed41e232fa4@cumbria-lrf.example,data\emails\37b7e249b4fa.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T08:00:00+00:00,SITREP 6 - Fenella - 15 Jan 0800
+546618a24a555a5d2642@cumbria-lrf.example,data\emails\3bc43150053e.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T17:00:00+00:00,SITREP 2 - Eamont Moor water quality incident - 15 Jan 1700
+60fcac1beca31b0d74d3@uuplc.example,data\emails\3c0e85dc8983.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-17T20:30:00+00:00,RE: Eamont Moor Water Treatment Works - latest? (Penrith water incident)
+002c53433afcbc4e41be@environment-agency.example,data\emails\3c536572c8de.eml,Owen Hartley <owen.hartley@environment-agency.example>,2026-01-13T13:30:00+00:00,Flood warnings issued - Storm Fenella
+8c9be8f76ead5c7727b6@cumberland-council.example,data\emails\3e3693c428ed.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T13:30:00+00:00,FW: Councillor enquiry - Keswick
+fe627e556533935b7689@mod.example,data\emails\3e75fc914c3a.eml,Harriet Cole <harriet.cole@mod.example>,2026-01-14T12:30:00+00:00,RE: Request for military aid - Storm Fenella
+a695dbc671acaa5b3bca@lancsfire.example,data\emails\3f231238e03b.eml,Dan Rigg <dan.rigg@lancsfire.example>,2026-01-14T19:20:00+00:00,RE: Lancashire Local Resilience Forum SITREP 4 - Storm Fenella response
+63a7a6e9654b28a22994@cabinetoffice.example,data\emails\3f4d11deccba.eml,Marcus Webb <marcus.webb@cabinetoffice.example>,2026-01-12T16:35:00+00:00,RE: RED National Sitrep 1 - 12/01/2026
+6ae330048cf51bf63084@lancaster-council.example,data\emails\4013929f1adf.eml,Paul Stainton <paul.stainton@lancaster-council.example>,2026-01-14T10:00:00+00:00,Press release issued - Morecambe seafront
+a4f0ec269689981a991a@cumbria-lrf.example,data\emails\40209774226e.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T14:45:00+00:00,Queen Elizabeth School - latest?
+0d9ccfef2955d0b44639@cumbria-police.example,data\emails\4108de7aec15.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-16T13:29:00+00:00,FW: SITREP 10 - Fenella - 16 Jan 1200
+5ada3eae1cae668df30c@nwas.example,data\emails\418bb3b832e5.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-15T11:15:00+00:00,West Coast Main Line (Carlisle to Lancaster) - latest? (Storm Fenella response)
+ae821e3dac5b3ba58e17@cabinetoffice.example,data\emails\4244f30ac1e8.eml,Marcus Webb <marcus.webb@cabinetoffice.example>,2026-01-15T16:00:00+00:00,COBR Unit summary - 15 Jan
+e933f60fe0cc88f0c37c@cumbria-police.example,data\emails\43aecc3f76a6.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-16T12:25:00+00:00,RE: SITREP 10 - Fenella - 16 Jan 1200
+77a884d5e1db914fb97c@westmorlandandfurness.example,data\emails\43e2f2a93c2d.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-15T12:30:00+00:00,Press release - Penrith boil water incident
+63fc0a37929f2cbbd152@mhclg.example,data\emails\445d6afb0174.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-14T10:56:00+00:00,FW: Request for military aid - Storm Fenella
+bf465ecce8d072374150@enwl.example,data\emails\446ae183d3ba.eml,Fiona Leck <fiona.leck@enwl.example>,2026-01-17T14:20:00+00:00,Carnforth primary restored
+ed17e2977db8ef999cfe@westmorlandandfurness.example,data\emails\44d65e228ed0.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T15:05:00+00:00,"RE: Queen Elizabeth School, Kirkby Lonsdale - latest? (STORM FENELLA)"
+0da892aeb758711c5e49@westmorlandandfurness.example,data\emails\4517a3e8ba54.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T08:15:00+00:00,QEGS Penrith closed - Penrith boil water incident
+faa638b15a960e11d1da@cumbriafire.example,data\emails\46e3a0ff4a87.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-14T02:40:00+00:00,Fellside Care Home evacuated - Storm Fenella
+bb6c314e4ea3dd1822dc@cumbria-lrf.example,data\emails\470e5dbefb72.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T13:00:00+00:00,SITREP 7 - Storm Fenella - 15 Jan 1300
+41cc9c6446f8ddfb3aa9@cumberland-council.example,data\emails\4a37a891c6e6.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-17T12:30:00+00:00,Cockermouth School closed and A591 Dunmail Raise reopened
+cbea512df508ca905242@redcross.example,data\emails\4b749ade8525.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-14T20:10:00+00:00,the Northside bridge - latest?
+c77a7689109ff61bfc80@cumberland-council.example,data\emails\4cda97fa1edc.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-13T15:20:00+00:00,Keswick School opened as rest centre - Fenella
+a2a4ed2494cc4f9a73b6@cumbria-lrf.example,data\emails\4d6a3a27eaa6.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T09:15:00+00:00,RE: Cumbria Fire and Rescue Service update - Thursday
+299b56fd7832825fa890@redcross.example,data\emails\4febca1a3418.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-14T12:07:00+00:00,FW: URGENT: M6 Junction 40 closed - overturned HGV
+d5658ecfdde5522e6e04@cumberland-council.example,data\emails\52a6d2bce9d2.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-13T18:26:00+00:00,FW: Road network update - Fenella
+3fb9e7b9e4efc2f97b11@cumbria-lrf.example,data\emails\52a9f0ca9296.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T12:50:00+00:00,RE: Cockermouth School closed and A591 Dunmail Raise reopened
+ff87dfef22efca3ff093@cumbria-lrf.example,data\emails\54244573d38d.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T12:30:00+00:00,RE: River levels falling - Storm Fenella
+acdc5d4b98170a23b98a@metoffice.example,data\emails\5440fa8e489e.eml,Claire Bentham <claire.bentham@metoffice.example>,2026-01-13T11:30:00+00:00,UPDATE: amber warning extended - Storm Fenella
+6bf10f7d30a410afaafe@nwas.example,data\emails\5488d47d4a41.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-17T11:15:00+00:00,A66 Keswick to Penrith - latest?
+35992bc4a4acff8f15be@cumberland-council.example,data\emails\56bd461102b6.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-16T12:15:00+00:00,Rest centres and roads - Storm Fenella - Friday
+5d58b53199ca5c2231c3@mhclg.example,data\emails\56defffa4ce0.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-13T19:20:00+00:00,FW: SITREP 2 - STORM FENLELA - 13 Jan 1900
+4b9726e0f51f8caa79fb@nationalhighways.example,data\emails\57d39c6c92f6.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-17T13:50:00+00:00,RE: M6 Junction 40 - latest?
+698cf183b5905a95dc2c@cumbria-police.example,data\emails\590fdfd4e932.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-14T16:40:00+00:00,Missing person - resolved
+48ae9082a2aa0ab16b72@nwas.example,data\emails\5ddb0236af1f.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T09:42:00+00:00,FW: Coastal and river update - Lancashire
+72cd4135c2205803c416@lancashire-rf.example,data\emails\5de290a7fc55.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-16T10:09:00+00:00,FW: Road network update - day 5
+f292f1418c0336f631c5@wyre-council.example,data\emails\5ecc432424cd.eml,Ryan Postlethwaite <ryan.postlethwaite@wyre-council.example>,2026-01-14T12:20:00+00:00,RE: Lancashire LRF SITREP 3 - Storm Fenella
+5917e5f9afba6abec72e@redcross.example,data\emails\5f3965493f43.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-12T09:11:00+00:00,FW: Amber warning - rain and wind - STORM FENELLA
+a6e103a5254ccbeef84a@uuplc.example,data\emails\5f51bc52f5fb.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-15T07:40:00+00:00,URGENT - water quality - Eamont Moor WTW
+54452d6e52d7f416b092@nwas.example,data\emails\604197e83ef3.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-17T08:30:00+00:00,junction 40 of the M6 - latest?
+78a0329b09d3f287c505@cumberland-council.example,data\emails\607e1b5b574a.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-16T15:05:00+00:00,RE: Northside Bridge - latest? (Storm Fenella)
+ee99a26bf5ec8e91f275@cumbria-lrf.example,data\emails\60a0187adce3.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T12:40:00+00:00,RE: Request for military aid - Storm Fenella
+8e1333a1db208fdecac8@environment-agency.example,data\emails\627faefcad67.eml,Owen Hartley <owen.hartley@environment-agency.example>,2026-01-14T09:00:00+00:00,Coastal and river update - Lancashire
+ca0710c62ef2258a5ef7@cumberland-council.example,data\emails\6283664e1ed4.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-13T16:40:00+00:00,RE: Keswick School - latest? (Storm Fenella)
+f7a36b271b11f2818b31@uuplc.example,data\emails\62f6cd4a553a.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-15T17:30:00+00:00,RE: SITREP 2 - Eamont Moor water quality incident - 15 Jan 1700
+71755a6ba7f60a320ee2@lancsfire.example,data\emails\6323c414fe5e.eml,Dan Rigg <dan.rigg@lancsfire.example>,2026-01-16T12:20:00+00:00,RE: Lancs LRF SITREP 7 - STORM FENELLA
+3c0ed73cf0b4eeb7cefa@environment-agency.example,data\emails\652b771e4425.eml,Owen Hartley <owen.hartley@environment-agency.example>,2026-01-13T09:10:00+00:00,Automatic reply: TCG 1400 today - dial-in
+d44b3566c992e4cb302e@cumbria-police.example,data\emails\65422212986d.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-13T22:55:00+00:00,FW: Power outages - Storm Fenella
+c748f459efdb5b5141b3@cumbria-lrf.example,data\emails\65c889f9fb7d.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T17:00:00+00:00,SITREP 11 - Storm Fenella - 16 Jan 1700
+47ea2414670829554660@nationalhighways.example,data\emails\67be8588771c.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-14T15:10:00+00:00,RE: URGENT: M6 Junction 40 closed - overturned HGV
+21008419baf9096541db@cumberland-council.example,data\emails\68c5463c2913.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-14T08:15:00+00:00,RE: Rest centres - Storm Fenella - Wednesday AM
+d20e987facf2bb2b7c04@uuplc.example,data\emails\68ce33264595.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-16T16:00:00+00:00,Customer update - Eamont Moor water quality incident
+426eb9d955d25ca3826f@cumbriafire.example,data\emails\68d32bc0bd9f.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-17T17:25:00+00:00,RE: SITREP 13 - STORM FENELLA - 17 Jan 1700
+904e0add012ac72397bb@lancashire-rf.example,data\emails\694bba77c32a.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-15T08:50:00+00:00,RE: A683 Lancaster to Kirkby Lonsdale - latest?
+3bda522b1318bd8a3bec@nwas.example,data\emails\699bdb9efe6d.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T10:30:00+00:00,the Northside bridge - latest? (STORM FENELLA)
+44a1d8241197eb6a39d8@cumberland-council.example,data\emails\69f7cfd35d8b.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-13T19:25:00+00:00,RE: Please add to distribution list
+441d337bbc8c7cd8d49c@cumbria-lrf.example,data\emails\6a3f37f1fda9.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T09:30:00+00:00,Request for military aid - Storm Fenella
+ead1f5b8beb7eaedac74@cumbria-lrf.example,data\emails\6afd39b6fb1c.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T11:42:00+00:00,RE: UPDATE: amber warning extended - Storm Fenella
+76169ace217c8037bfcd@mhclg.example,data\emails\6b10a5e7538a.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-16T08:00:00+00:00,RED National Sitrep 5 - 16/01/2026
+346d9e54d1e3f4ffe8d1@redcross.example,data\emails\6d2671f559da.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-17T20:10:00+00:00,Eamont Moor Water Treatment Works - latest? (Penrith water incident)
+26d483860c2d75184fb1@cumbria-lrf.example,data\emails\6d75fcd91d63.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T12:00:00+00:00,SITREP 10 - Fenella - 16 Jan 1200
+acb5791e75403876146b@cumbria-police.example,data\emails\70153a69ec02.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-13T16:20:00+00:00,Keswick School - latest? (Storm Fenella)
+c76fe1cdd2003ee1e7a5@cumbria-lrf.example,data\emails\71078d64b24e.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T17:00:00+00:00,Recovery coordinating group - first meeting
+e442d5cc512fec61c7b4@cumberland-council.example,data\emails\72b64d24282a.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T16:40:00+00:00,RE: Riverside Community Centre - latest?
+4f116ae2c7dfc5f0b6db@mhclg.example,data\emails\72d57c5fd84b.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-13T17:00:00+00:00,RED National Sitrep 2 - 13/01/2026
+5dc800d438148eae703d@lancsfire.example,data\emails\72f57ab0e661.eml,Dan Rigg <dan.rigg@lancsfire.example>,2026-01-13T13:20:00+00:00,RE: Lancashire LRF SITREP 1 - Storm Fenella
+8b5409aa5d3ad76b6c26@nationalhighways.example,data\emails\7323026aaa84.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-16T09:00:00+00:00,Road network update - day 5
+11a07b159439cae45545@nwas.example,data\emails\73862709023e.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-17T12:44:00+00:00,FW: Cockermouth School closed and A591 Dunmail Raise reopened
+89e35e610470a2a96507@westmorlandandfurness.example,data\emails\73e461d575ae.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-15T16:11:00+00:00,FW: Keswick School rest centre closed
+c8e058feb54765e1bfc1@nwas.example,data\emails\78b3adbabc96.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T13:00:00+00:00,FW: SITREP 4 - Storm Fenella - 14 Jan 1200
+afee969c8b26d3af96da@cumbria-lrf.example,data\emails\7cbda8605fcf.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T12:00:00+00:00,SITREP 1 - Penrith water incident - 15 Jan 1200
+e95a53a756f862b9dc0c@cumbria-lrf.example,data\emails\7ebc9677bcb0.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T11:15:00+00:00,Penrith Leisure Centre - latest?
+9855891a208d85516f76@ukhsa.example,data\emails\7f7591d378dd.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-17T13:30:00+00:00,M6 Junction 40 - latest?
+aabaf25d5409264d2f90@cumbria-lrf.example,data\emails\7f783a1a93e0.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T17:39:00+00:00,FW: RED National Sitrep 2 - 13/01/2026
+8f1e042153389ea5f0d3@networkrail.example,data\emails\7f8601e2bb9a.eml,Ben Oduya <ben.oduya@networkrail.example>,2026-01-15T11:35:00+00:00,RE: West Coast Main Line (Carlisle to Lancaster) - latest? (Storm Fenella response)
+4fdac63f055f1a70e87c@westmorlandandfurness.example,data\emails\8031c337b0e4.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T08:40:00+00:00,RE: SITREP 9 - Storm Fenella - 16 Jan 0800
+2ede254eaa59a5aa6854@nationalhighways.example,data\emails\80ded5e3f4c5.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-16T18:00:00+00:00,RE: A66 west of Penrith - latest? (STORM FENELLA)
+93da87ae53ca8a0bf5ab@cumberland-council.example,data\emails\80e2847c05c8.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-14T05:30:00+00:00,Vulnerable residents - Cockermouth
+fc4e16c0da58b57844c8@mhclg.example,data\emails\8103c2af5577.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-17T20:10:00+00:00,Glenridding Village Hall - latest?
+26eef3c1ef8f86234b73@ukhsa.example,data\emails\821cd2594b40.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-16T14:00:00+00:00,UK Health Security Agency update - Eamont Moor water quality incident
+dd64c0b633a11d9f2069@cumbria-lrf.example,data\emails\8249fe0a1fdc.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T19:00:00+00:00,SITREP 2 - STORM FENLELA - 13 Jan 1900
+3dd5d1a70aac415c39da@lancashire-rf.example,data\emails\824e466158eb.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-14T10:30:00+00:00,RE: West Coast Main Line closed - flooding
+69bb0e77ec9b0d806c60@westmorlandandfurness.example,data\emails\83fe96448c9c.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-15T11:25:00+00:00,RE: Boil water notice issued - Penrith boil water incident
+3e543eea54f8258a9ef2@cumbria-lrf.example,data\emails\85954dc1503a.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T10:20:00+00:00,RE: Penrith boil water incident - Saturday update
+8fef0e899b6e57be98f6@cumberland-council.example,data\emails\85a60aa23fd9.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-15T10:10:00+00:00,Complaint from resident - rest centre
+51354468db41cc8a0e9c@redcross.example,data\emails\85cd41c99c4e.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-13T11:51:00+00:00,FW: UPDATE: amber warning extended - Storm Fenella
+f473420a02796c9ccbd9@westmorlandandfurness.example,data\emails\860384545209.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T11:50:00+00:00,FW: DRAFT press release for sign-off - Storm Fenella
+9d5dff10caac68c00ef8@cumbria-lrf.example,data\emails\86d9ad1508ed.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T17:40:00+00:00,A66 west of Penrith - latest? (STORM FENELLA)
+5d649d9690eaa73e03ca@metoffice.example,data\emails\86ed3fdf1b53.eml,Claire Bentham <claire.bentham@metoffice.example>,2026-01-12T08:30:00+00:00,Amber warning - rain and wind - STORM FENELLA
+e83e863c2407e5682363@nationalhighways.example,data\emails\8705e84cc8c5.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-17T11:35:00+00:00,RE: A66 Keswick to Penrith - latest?
+ad16ba6306e58c4c44a5@enwl.example,data\emails\8714cc2fd19a.eml,Fiona Leck <fiona.leck@enwl.example>,2026-01-14T13:20:00+00:00,Carnforth Primary Substation flooded
+e0b0a153df59105cba50@enwl.example,data\emails\8a4128eae267.eml,Fiona Leck <fiona.leck@enwl.example>,2026-01-17T10:50:00+00:00,RE: Carnforth substation - latest? (Storm Fenella)
+0e21bb70f3eee725bd4c@cumbria-lrf.example,data\emails\8ad5f39e5cf3.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T07:00:00+00:00,SITREP 3 - STORM FENELLA - 14 Jan 0700
+8c17f5e532a061f7bb98@ukhsa.example,data\emails\8b79e0d24ebf.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-15T08:30:00+00:00,RE: URGENT - water quality - Eamont Moor WTW
+210d8c8b256471472560@cumbria-police.example,data\emails\8c3845157656.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-17T08:33:00+00:00,FW: RED National Sitrep 6 - 17/01/2026
+96f93c76440dad1010d0@cumberland-council.example,data\emails\8c83f7c6e25a.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T07:45:00+00:00,Rest centres - Storm Fenella - Wednesday AM
+6a54cc0678e610ce78bc@westmorlandandfurness.example,data\emails\8f0bdc68f170.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T18:33:00+00:00,FW: SITREP 5 - STORM FENELLA - 14 Jan 1800
+04ebf727f0bd13938843@cumbria-lrf.example,data\emails\8f47b12098c4.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-12T08:45:00+00:00,RE: Amber warning - rain and wind - STORM FENELLA
+0682369f3b8a4826eb15@cumberland-council.example,data\emails\8fe4b9d95c58.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T10:05:00+00:00,"CORRECTION: Northside Bridge, Workington has NOT collapsed"
+57574e0c31b894682816@cabinetoffice.example,data\emails\905079ad190a.eml,Marcus Webb <marcus.webb@cabinetoffice.example>,2026-01-14T13:00:00+00:00,COBR Unit summary - 14 Jan
+6c1d0b48f9c547662e7f@lancaster-council.example,data\emails\927c3a36a80b.eml,Paul Stainton <paul.stainton@lancaster-council.example>,2026-01-13T20:15:00+00:00,West End Community Centre rest centre open - Storm Fenella
+a0e7e23c70bcd840535b@cumbria-lrf.example,data\emails\9403c63056d4.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T09:55:00+00:00,RE: SITREP 12 - Fenella - 17 Jan 0900
+5eaa414e8fa1d15f97bb@westmorlandandfurness.example,data\emails\94498cf4324d.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T12:15:00+00:00,Westmorland and Furness update - STORM FENELLA
+e9fd40715744f771b8e4@enwl.example,data\emails\94c2e5a6abff.eml,Fiona Leck <fiona.leck@enwl.example>,2026-01-14T14:00:00+00:00,RE: Carnforth Primary Substation flooded
+3f30c94f7c1e9ec47fd7@lancashire-rf.example,data\emails\95e33727b235.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-16T15:28:00+00:00,FW: Cumbria - recovery phase - Storm Fenella response
+a0beab41bf3fadd00ad9@westmorlandandfurness.example,data\emails\9759f8979a5c.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T11:35:00+00:00,RE: Pooley Bridge crossing - latest?
+a3b0c813d2472009459f@westmorlandandfurness.example,data\emails\97c4900a0f99.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T15:05:00+00:00,RE: Queen Elizabeth School - latest?
+10a58caff8278fab0117@ukhsa.example,data\emails\988d5e40d31d.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-16T14:45:00+00:00,"Queen Elizabeth School, Kirkby Lonsdale - latest? (STORM FENELLA)"
+a0efb654ea382442d28f@cumbria-police.example,data\emails\9a7e002fea55.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-13T17:40:00+00:00,A591 near Thirlmere - latest?
+f983cbe9675a8f611b97@westmorlandandfurness.example,data\emails\9ab325bed639.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-15T17:00:00+00:00,MP enquiry - Eamont Moor water quality incident
+b0c9645dfc897f4f7811@cumbria-lrf.example,data\emails\9ae413b0a077.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T15:45:00+00:00,RE: Keswick School rest centre closed
+267679c7a998e11080d8@cumbria-lrf.example,data\emails\9b5d4ca813bf.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T22:15:00+00:00,RE: Power outages - Storm Fenella
+2e0318ec2c7ba9b7a2c4@redcross.example,data\emails\9ca2c2f30d2f.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-14T10:00:00+00:00,British Red Cross support - Fenella
+5521a5882216e94e4434@dwi.example,data\emails\9d3e284ebcc3.eml,Anna Birkett <anna.birkett@dwi.example>,2026-01-15T13:00:00+00:00,DWI notification - Penrith boil water icnident
+dbbe3e6ce7973f4d9bef@cumbria-lrf.example,data\emails\9d5db00e5046.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T16:45:00+00:00,RE: Penrith Community Hospital - water incident
+d862dd2bb52fe7846473@lancashire-rf.example,data\emails\9e0b061ce8f4.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-13T13:00:00+00:00,Lancashire LRF SITREP 1 - Storm Fenella
+43a078708d0c131d444a@cumbria-lrf.example,data\emails\9ec8751d35fb.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T14:20:00+00:00,RE: Appleby - comparison with previous events
+2fe5a24d9d97ffdd8838@cumbriafire.example,data\emails\9f66f16c5a5e.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-13T22:30:00+00:00,Cumbria Fire and Rescue Service operational update - Storm Fenella
+bf0b830123fd2037959e@cumbria-lrf.example,data\emails\9f9ccf974fc4.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T12:15:00+00:00,RE: North West Ambulance Service - STORM FENELLA impact
+83552a58c7f1ae7a70bb@wyre-council.example,data\emails\9fbabac4d37f.eml,Ryan Postlethwaite <ryan.postlethwaite@wyre-council.example>,2026-01-14T11:00:00+00:00,Garstang flooding - Wyre Borough Council update
+261156bb63e99bee92bd@lancsfire.example,data\emails\a117871afc78.eml,Dan Rigg <dan.rigg@lancsfire.example>,2026-01-13T21:20:00+00:00,RE: Lancashire Resilience Forum SITREP 2 - Storm Fenella response
+e243addd058b087f8659@cumbria-lrf.example,data\emails\a4042f5a5be7.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T18:00:00+00:00,SITREP 5 - STORM FENELLA - 14 Jan 1800
+f0c03135b54160d3b949@cumbriafire.example,data\emails\a4e46fd86489.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-16T12:40:00+00:00,RE: Rest centres and roads - Storm Fenella - Friday
+cd6939a5d8945d3ea9eb@cumbria-lrf.example,data\emails\a4f970872805.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T17:00:00+00:00,SITREP 13 - STORM FENELLA - 17 Jan 1700
+58e81c44c48e091b6725@enwl.example,data\emails\a7e9259f16b4.eml,Fiona Leck <fiona.leck@enwl.example>,2026-01-13T22:00:00+00:00,Power outages - Storm Fenella
+86272d52e4affab8ccc9@lancashire-rf.example,data\emails\aa263df212a9.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-13T21:00:00+00:00,Lancashire Resilience Forum SITREP 2 - Storm Fenella response
+f65fdaf15b6f81842b2d@nwas.example,data\emails\adad2774efa8.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-13T16:50:00+00:00,FW: Keswick School opened as rest centre - Fenella
+339987cbc1856d95aef2@lancashire-rf.example,data\emails\afceaa553a1d.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-15T12:00:00+00:00,Lancashire Resilience Forum SITREP 5 - Storm Fenella
+cfbcc18ec778229fcf1c@cumbriafire.example,data\emails\afecc50762b5.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-15T09:00:00+00:00,Cumbria Fire and Rescue Service update - Thursday
+2e87f8d0105cf4f44fea@ncic.example,data\emails\b18f6eea278a.eml,Sam Lowther <sam.lowther@ncic.example>,2026-01-16T18:30:00+00:00,Automatic reply: Recovery coordinating group
+7a65f6ed6ea108e6a890@cumbria-lrf.example,data\emails\b1ce657ef052.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T18:10:00+00:00,Major incident declared - Storm Fenella response
+66f36fbbc942c54fcd53@ukhsa.example,data\emails\b463aa5193fe.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-17T15:00:00+00:00,UK Health Security Agency - weekend cover - Penrith boil water incident
+2ee4d8517be2e84f2fab@mhclg.example,data\emails\b626035a18c3.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-15T10:15:00+00:00,RE: Warnings downgraded - Fenella
+8d758fa7f5d8a46e565a@networkrail.example,data\emails\b6b924c399cb.eml,Ben Oduya <ben.oduya@networkrail.example>,2026-01-14T10:15:00+00:00,West Coast Main Line closed - flooding
+05d6a0562602a3182627@westmorlandandfurness.example,data\emails\b6c2e8ac28e5.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T15:30:00+00:00,Westmorland and Furness update - Friday
+8328238b4e00a7f1496c@networkrail.example,data\emails\b70ba045af5e.eml,Ben Oduya <ben.oduya@networkrail.example>,2026-01-15T09:15:00+00:00,the WCML between Carlisle and Lancaster reopened - STORM FENELLA
+97d4f1d347d970cd457a@mhclg.example,data\emails\b71b85203681.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-14T11:15:00+00:00,Pooley Bridge crossing - latest?
+9f2a1e25ee1a521829a8@nwas.example,data\emails\b79759b18e15.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T08:41:00+00:00,FW: Rest centres - Storm Fenella - Wednesday AM
+77102170600b3d4a4efe@mhclg.example,data\emails\b85602eb6043.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-15T14:00:00+00:00,RED National Sitrep 4 - 15/01/2026
+a79378ee5a714c5840cb@redcross.example,data\emails\b99a8c5ab179.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-17T09:20:00+00:00,FW: SITREP 12 - Fenella - 17 Jan 0900
+c72364967b5ead46dc31@cumbria-lrf.example,data\emails\ba4b5aaf384f.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T17:00:00+00:00,SITREP 6 - Penrith drinking water incident - 17 Jan 1700
+da0fb6a96fd83ea68920@uuplc.example,data\emails\bb548b741018.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-17T10:00:00+00:00,Penrith boil water incident - Saturday update
+810798b5b4e7ae616f2c@cabinetoffice.example,data\emails\bd2155630165.eml,Marcus Webb <marcus.webb@cabinetoffice.example>,2026-01-15T14:35:00+00:00,RE: RED National Sitrep 4 - 15/01/2026
+a4eecb9bfeb4a669243f@cumbria-lrf.example,data\emails\be4188e19eff.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-12T10:00:00+00:00,TCG 1400 today - dial-in
+0ebfaaeda56b2c8b1b9c@cumberland-council.example,data\emails\be8a9406f5b4.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T06:10:00+00:00,the Northside bridge - reports of collapse
+dd8ce953cb89e3d7b258@cumbria-lrf.example,data\emails\c055282d6b6d.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T06:25:00+00:00,RE: the Northside bridge - reports of collapse
+f2e07fb06c404646476a@cumbria-lrf.example,data\emails\c06b0b12d4f3.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T19:00:00+00:00,Please add to distribution list
+325393f22f748d289463@cumbria-police.example,data\emails\c179b3dba8a8.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-16T14:45:00+00:00,Northside Bridge - latest? (Storm Fenella)
+d374d77dbfaae5aa63fd@cumbria-lrf.example,data\emails\c3a5a5c57f30.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T08:00:00+00:00,SITREP 9 - Storm Fenella - 16 Jan 0800
+6cc6ccf6d4ed8eeff33e@westmorlandandfurness.example,data\emails\c4045b0f14eb.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T17:40:00+00:00,RE: SITREP 11 - Storm Fenella - 16 Jan 1700
+1f4e28c8a3fb409b01f6@cumbria-lrf.example,data\emails\c48c78436e16.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T18:55:00+00:00,RE: SITREP 8 - Storm Fenella response - 15 Jan 1800
+61ed72f90027f97eaa5b@cumberland-council.example,data\emails\c4cd51664b50.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-13T16:40:00+00:00,RE: A591 Thirlmere - latest? (Storm Fenella)
+f7ea9dee51cbeefadce4@westmorlandandfurness.example,data\emails\c78cac33fa0b.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-17T20:30:00+00:00,RE: Glenridding Village Hall - latest?
+9884ab44f1688b38301a@cumbria-lrf.example,data\emails\ca7fd2866b53.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T17:20:00+00:00,RE: Road network update - Fenella
+6e45c5077eca2370095f@westmorlandandfurness.example,data\emails\cb20ff442cdd.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-17T09:40:00+00:00,RE: SITREP 12 - Fenella - 17 Jan 0900
+ea30034921a0973bab8b@redcross.example,data\emails\cb78d2f5ecec.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-15T15:30:00+00:00,BRC support - water incident
+e31e1b1bcd0b083e1831@cumbriafire.example,data\emails\cca2dd9bff9e.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-14T06:50:00+00:00,RE: the Northside bridge - reports of collapse
+450cc0fd6e660358cb2c@cumberland-council.example,data\emails\ce8c0eb95781.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-15T14:30:00+00:00,FW: DWI notification - Penrith boil water icnident
+435102d50b1dbd43e10d@ncic.example,data\emails\cf1a773514c6.eml,Sam Lowther <sam.lowther@ncic.example>,2026-01-15T16:30:00+00:00,Penrith Community Hospital - water incident
+ba5630f56e0b879d3ed6@lancashire-rf.example,data\emails\d1e2d5803612.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-15T19:00:00+00:00,Lancashire LRF SITREP 6 - STORM FENELLA
+8f15929b760e5d431bdd@cumbria-lrf.example,data\emails\d226c31853bc.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T18:00:00+00:00,SITREP 8 - Storm Fenella response - 15 Jan 1800
+7336202bccb4ec5b4fd7@cumberland-council.example,data\emails\d3b6b2c7d1e8.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T11:35:00+00:00,RE: A591 near Thirlmere - latest? (Storm Fenella response)
+6a60712d5cd1c9083b1d@cumbria-lrf.example,data\emails\d5d8a7d3fba1.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T09:15:00+00:00,RE: Road network update - day 5
+152912b9f72369a7a957@cumberland-council.example,data\emails\d66d880476a4.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-16T13:50:00+00:00,RE: Keswick School - latest?
+18bcde5b3f4c5c68b576@westmorlandandfurness.example,data\emails\d7ac5e3e31eb.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-16T08:55:00+00:00,RE: QEGS Penrith closed - Penrith boil water incident
+d120f9e5facf0b12e9df@mhclg.example,data\emails\da4a7d399d42.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-14T03:56:00+00:00,FW: Fellside Care Home evacuated - Storm Fenella
+014b85876a3f657a6c93@cumbria-lrf.example,data\emails\da7b0411fe27.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T03:45:00+00:00,RE: SEVERE FLOOD WARNING - Cockermouth - Storm Fenella response
+7afae8f89b6d46c9f169@cumbriafire.example,data\emails\db07f95b0262.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-15T17:40:00+00:00,"Riverside Community Centre, Carlisle - latest? (Storm Fenella response)"
+3a08e3163379c01bee76@lancaster-council.example,data\emails\db846d0c01df.eml,Paul Stainton <paul.stainton@lancaster-council.example>,2026-01-15T13:50:00+00:00,RE: West End CC - latest? (STORM FENELLA)
+0c2c08d3367fe140a472@cumberland-council.example,data\emails\dc690ed4a77f.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T23:10:00+00:00,Automatic reply: SITREP 4
+3ff3efad843ba128a743@lancashire-rf.example,data\emails\dcddefa42548.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-16T09:45:00+00:00,WCML - latest? (Storm Fenella)
+e8246a21af5d30cba368@cumberland-council.example,data\emails\de3f3100907c.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T10:16:00+00:00,FW: British Red Cross support - Fenella
+d5aa3bbeaed8a4a0645a@uuplc.example,data\emails\de89b20b1eab.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-17T11:35:00+00:00,RE: Penrith Leisure Centre - latest?
+8a8f05f3cbabc9610430@ukhsa.example,data\emails\df0f9d68d0a3.eml,Amira Haddad <amira.haddad@ukhsa.example>,2026-01-14T09:45:00+00:00,Fellside care home - latest? (Fenella)
+8b4c128d9ea81dc562a4@westmorlandandfurness.example,data\emails\dfad5ae1c426.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T14:00:00+00:00,Appleby - comparison with previous events
+20edfc599353d5e5c808@cumbria-lrf.example,data\emails\e03b6ab6c710.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T12:30:00+00:00,RE: Westmorland and Furness update - STORM FENELLA
+4ef339df797a20f255b1@cumberland-council.example,data\emails\e03d6a410af6.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T08:40:00+00:00,RE: Rest centres - Storm Fenella - Wednesday AM
+e9a495da28fbc8e0e3ea@nwas.example,data\emails\e0bb2e51781c.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T16:20:00+00:00,Riverside Community Centre - latest?
+969a9d76fd5217d312fa@cumbria-lrf.example,data\emails\e1589c6dfa1d.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-15T10:30:00+00:00,Pooley Bridge crossing - latest? (Storm Fenella response)
+cf3e338d1b388086519b@mhclg.example,data\emails\e2cf856834c2.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-15T08:30:00+00:00,A683 Lancaster to Kirkby Lonsdale - latest?
+d6527f32d8a331054e78@mhclg.example,data\emails\e3beaeaa67f9.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-16T13:20:00+00:00,FW: COBR Unit summary - 16 Jan
+c63e02574edb62ac7708@cumberland-council.example,data\emails\e3cbe15987e1.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-13T14:25:00+00:00,FW: Flood warnings issued - Storm Fenella
+d42cffbae432659115f2@cumbriafire.example,data\emails\e5a959a81f00.eml,Rachel Dunn <rachel.dunn@cumbriafire.example>,2026-01-15T13:30:00+00:00,West End CC - latest? (STORM FENELLA)
+0ccfc7b9dcda87ce2ecf@cumbria-police.example,data\emails\e6f7ac39db29.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-14T11:25:00+00:00,RE: URGENT: M6 Junction 40 closed - overturned HGV
+06434cd46174dc1de06a@westmorlandandfurness.example,data\emails\e71deea8b849.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-14T13:24:00+00:00,FW: Lancashire LRF SITREP 3 - Storm Fenella
+a4c601bf123706b8cbaa@cumbria-police.example,data\emails\e86cfe370a9f.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-13T16:20:00+00:00,A591 Thirlmere - latest? (Storm Fenella)
+af6b7ad192c6d5545cae@cumbria-lrf.example,data\emails\e8b8248623ad.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T10:10:00+00:00,RE: British Red Cross support - Fenella
+af1d306e4a4fcda75597@cumbria-lrf.example,data\emails\e970a3b59cfb.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-13T22:45:00+00:00,RE: Cumbria Fire and Rescue Service operational update - Storm Fenella
+d8a58dca01e17e79893d@cumbria-lrf.example,data\emails\e9849ea4c591.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-17T09:00:00+00:00,SITREP 12 - Fenella - 17 Jan 0900
+6a799061e988d441623a@lancashire-rf.example,data\emails\edd1f86a9561.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-14T11:20:00+00:00,RE: Garstang flooding - Wyre Borough Council update
+d5435630a205a02ac603@cabinetoffice.example,data\emails\ef7ffba910df.eml,Marcus Webb <marcus.webb@cabinetoffice.example>,2026-01-16T08:35:00+00:00,RE: RED National Sitrep 5 - 16/01/2026
+141c9e2a309a024fcf50@cumberland-council.example,data\emails\f03769fb6875.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-16T08:40:00+00:00,RE: QEGS Penrith closed - Penrith boil water incident
+adef5a3ce1e110f9785e@cumbria-lrf.example,data\emails\f107a029f7ec.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T15:45:00+00:00,RE: Westmorland and Furness update - Friday
+fdf685b9a3da47ae57ee@nationalhighways.example,data\emails\f12a6c6baf12.eml,Dev Chauhan <dev.chauhan@nationalhighways.example>,2026-01-14T11:10:00+00:00,URGENT: M6 Junction 40 closed - overturned HGV
+dd659cff6188df5dd9b2@cumberland-council.example,data\emails\f274492449e4.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T20:30:00+00:00,RE: the Northside bridge - latest?
+932aab594dea237d1c8c@cumberland-council.example,data\emails\f2f83b0987ed.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-15T15:30:00+00:00,Keswick School rest centre closed
+e71376d938ed7b5dc4a8@cumbria-lrf.example,data\emails\f41441415e54.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-14T12:00:00+00:00,SITREP 4 - Storm Fenella - 14 Jan 1200
+ba6c8946fb30477905c6@cumbria-lrf.example,data\emails\f4ac8b200934.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T14:20:00+00:00,Cumbria - recovery phase - Storm Fenella response
+ae43b924880933a7fd01@cumberland-council.example,data\emails\f513f019159b.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-15T18:00:00+00:00,"RE: Riverside Community Centre, Carlisle - latest? (Storm Fenella response)"
+4471b8878cbae7302f95@redcross.example,data\emails\f5de5231f3c4.eml,Jo Fleming <jo.fleming@redcross.example>,2026-01-16T13:30:00+00:00,Keswick School - latest?
+0bb829c33aa9aa85a8d0@cumberland-council.example,data\emails\f5f9f162f9b4.eml,Priya Nair <priya.nair@cumberland-council.example>,2026-01-14T11:30:00+00:00,DRAFT press release for sign-off - Storm Fenella
+11c4e175ca9513b1a779@uuplc.example,data\emails\f6ed97273c0e.eml,Nicola Firth <nicola.firth@uuplc.example>,2026-01-15T13:20:00+00:00,RE: DWI notification - Penrith boil water icnident
+29a04ed5f1e9392e707b@nwas.example,data\emails\f74fb9d081c8.eml,Lucy Grainger <lucy.grainger@nwas.example>,2026-01-14T12:00:00+00:00,North West Ambulance Service - STORM FENELLA impact
+d077201559def4eabd0d@environment-agency.example,data\emails\f897a1b726d4.eml,Owen Hartley <owen.hartley@environment-agency.example>,2026-01-14T03:30:00+00:00,SEVERE FLOOD WARNING - Cockermouth - Storm Fenella response
+40665012dbaa1de84609@cumbria-lrf.example,data\emails\f95b8a90f644.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T11:00:00+00:00,SITREP 3 - Eamont Moor water quality incident - 16 Jan 1100
+e2db3b4adaf6cacbd31b@cumbria-lrf.example,data\emails\fbe8e72a46fe.eml,Helen Marsden <helen.marsden@cumbria-lrf.example>,2026-01-16T13:30:00+00:00,FW: Lancs LRF SITREP 7 - STORM FENELLA
+e42878cb6a9cbaa8c257@lancashire-rf.example,data\emails\fc4c01104b6b.eml,Tom Ashworth <tom.ashworth@lancashire-rf.example>,2026-01-17T10:30:00+00:00,Carnforth substation - latest? (Storm Fenella)
+c754e2b0fc15b830bef7@westmorlandandfurness.example,data\emails\fcc6e8e3c4bd.eml,Gareth Ellwood <gareth.ellwood@westmorlandandfurness.example>,2026-01-17T11:30:00+00:00,RE: SITREP 5 - Penrith water incident - 17 Jan 1100
+29b1e059714031db0b4d@cumberland-council.example,data\emails\fd2739f21c30.eml,Karen Ostle <karen.ostle@cumberland-council.example>,2026-01-14T10:05:00+00:00,RE: Fellside care home - latest? (Fenella)
+978fc401ef2db12f2028@lancaster-council.example,data\emails\fe84c00ac485.eml,Paul Stainton <paul.stainton@lancaster-council.example>,2026-01-15T19:20:00+00:00,RE: Lancashire LRF SITREP 6 - STORM FENELLA
+226e04b094a179eb7309@mhclg.example,data\emails\ff0a331df046.eml,Sian Pryce <sian.pryce@mhclg.example>,2026-01-15T13:11:00+00:00,FW: Lancashire Resilience Forum SITREP 5 - Storm Fenella
+c8452bad3e195d15e521@cumbria-police.example,data\emails\ffb790a7d071.eml,James Keeling <james.keeling@cumbria-police.example>,2026-01-14T08:00:00+00:00,Cumbria Constabulary - road closures and evacuations
