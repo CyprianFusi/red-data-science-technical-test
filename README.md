@@ -10,7 +10,9 @@ Requires Python 3.13 and [`uv`](https://docs.astral.sh/uv/).
 uv sync
 ```
 
-This installs the three runtime/dev dependencies declared in `pyproject.toml`: `rapidfuzz` (fuzzy string matching for entity resolution), `pyyaml` (loading the relation/observation rule tables), and `pytest` (test suite). No network access is required after this step — the pipeline itself never calls a hosted LLM or external API.
+This installs the three runtime/dev dependencies declared in `pyproject.toml`: `rapidfuzz` (fuzzy string matching for entity resolution), `pyyaml` (loading the relation/observation rule tables), and `pytest` (test suite), into a `.venv` managed by `uv`. No network access is required after this step — the pipeline itself never calls a hosted LLM or external API.
+
+The brief's contract command is `python -m pipeline ...` with no `uv run` prefix, so before running it, activate that environment once per shell session — `source .venv/bin/activate` (macOS/Linux) or `.venv\Scripts\activate` (Windows) — or prefix every command below with `uv run`. Without one of those, a bare `python` resolves to the system interpreter, which doesn't have `rapidfuzz`/`pyyaml` installed.
 
 ## Run
 
