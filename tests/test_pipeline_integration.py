@@ -104,6 +104,34 @@ def test_run_does_not_crash_on_emails_with_missing_or_duplicate_message_ids(tmp_
     conn.close()
 
 
+def test_run_reports_ambiguous_gazetteer_keys(tmp_path):
+    """Two reference rows sharing a name (a realistic disambiguation trap,
+    e.g. the same site name in two different towns) must be surfaced, not
+    silently resolved by whichever CSV row happened to load last."""
+    emails_dir = tmp_path / "emails"
+    reference_dir = tmp_path / "reference"
+    out_dir = tmp_path / "out"
+
+    _write(
+        emails_dir / "e1.eml",
+        "From: a@b.com\nTo: c@d.com\nDate: Mon, 12 Jan 2026 10:00:00 +0000\n"
+        "Subject: Update\nMessage-ID: <e1@b.com>\nContent-Type: text/plain; charset=\"utf-8\"\n\n"
+        "The Riverside Community Centre remains open.\n",
+    )
+    _write(reference_dir / "lrfs.csv", "lrf_id,name,aliases\n")
+    _write(reference_dir / "incidents.csv", "incident_id,name,aliases,incident_type,start_date,status\n")
+    _write(reference_dir / "organisations.csv", "org_id,name,aliases,org_type,notes\n")
+    _write(
+        reference_dir / "sites.csv",
+        "site_id,name,aliases,site_type,locality\n"
+        "SITE-A,Riverside Community Centre,,site,Carlisle\n"
+        "SITE-B,Riverside Community Centre,,site,Kendal\n",
+    )
+
+    summary = run(emails_dir, reference_dir, out_dir)
+    assert "riverside community centre" in summary["ambiguous_gazetteer_keys"]
+
+
 def test_pipeline_source_has_no_hardcoded_scenario_names():
     """Guards spec Review Focus #5: resolution/extraction must be driven
     entirely by --reference and rules/*.yaml, not by this scenario's

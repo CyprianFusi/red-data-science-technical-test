@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import csv
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from pipeline.textutils import normalize_text
@@ -35,6 +35,7 @@ class Gazetteer:
     entity_type: str
     entities_by_id: dict[str, ReferenceEntity]
     lookup: dict[str, str]
+    ambiguous_keys: frozenset[str] = field(default_factory=frozenset)
 
 
 def load_gazetteer(reference_dir: Path, entity_type: str) -> Gazetteer:
@@ -43,6 +44,18 @@ def load_gazetteer(reference_dir: Path, entity_type: str) -> Gazetteer:
 
     entities_by_id: dict[str, ReferenceEntity] = {}
     lookup: dict[str, str] = {}
+    ambiguous_keys: set[str] = set()
+
+    def _add(key: str, entity_id: str) -> None:
+        # Two distinct reference rows can legitimately share a name/alias
+        # (e.g. the same site name in two different towns). Whichever row
+        # a dict assignment happens to see last is an accident of CSV row
+        # order, not a decision, so the first row seen always wins and the
+        # collision is recorded rather than silently overwritten.
+        if key in lookup and lookup[key] != entity_id:
+            ambiguous_keys.add(key)
+            return
+        lookup[key] = entity_id
 
     with open(csv_path, newline="", encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
@@ -54,11 +67,16 @@ def load_gazetteer(reference_dir: Path, entity_type: str) -> Gazetteer:
             entities_by_id[entity_id] = ReferenceEntity(
                 entity_id=entity_id, entity_type=entity_type, name=name, aliases=aliases
             )
-            lookup[normalize_text(name)] = entity_id
+            _add(normalize_text(name), entity_id)
             for alias in aliases:
-                lookup[normalize_text(alias)] = entity_id
+                _add(normalize_text(alias), entity_id)
 
-    return Gazetteer(entity_type=entity_type, entities_by_id=entities_by_id, lookup=lookup)
+    return Gazetteer(
+        entity_type=entity_type,
+        entities_by_id=entities_by_id,
+        lookup=lookup,
+        ambiguous_keys=frozenset(ambiguous_keys),
+    )
 
 
 def load_all_gazetteers(reference_dir: Path) -> dict[str, Gazetteer]:

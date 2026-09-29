@@ -6,6 +6,7 @@ Run:
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 from pipeline.emails import parse_eml_folder
@@ -55,11 +56,16 @@ def run(emails_dir: Path, reference_dir: Path, out_dir: Path) -> dict:
         observations=all_observations,
     )
 
+    ambiguous_keys = sorted(
+        {key for gazetteer in gazetteers.values() for key in gazetteer.ambiguous_keys}
+    )
+
     return {
         "emails": len(parsed_emails),
         "entities": len(resolver.all_entities()),
         "relations": len(all_relations),
         "observations": len(all_observations),
+        "ambiguous_gazetteer_keys": ambiguous_keys,
     }
 
 
@@ -76,6 +82,13 @@ def main() -> None:
         f"{summary['entities']} entities, {summary['relations']} relations, "
         f"{summary['observations']} observations. Output: {args.out}"
     )
+    if summary["ambiguous_gazetteer_keys"]:
+        names = ", ".join(summary["ambiguous_gazetteer_keys"])
+        print(
+            f"warning: {len(summary['ambiguous_gazetteer_keys'])} reference name(s) are "
+            f"ambiguous across multiple rows and always resolved to the first row: {names}",
+            file=sys.stderr,
+        )
 
 
 if __name__ == "__main__":
