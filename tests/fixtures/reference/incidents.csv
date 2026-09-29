@@ -1,0 +1,2 @@
+incident_id,name,aliases,incident_type,start_date,status
+INC-001,Storm Fenella,,severe_weather,2026-01-12,active
