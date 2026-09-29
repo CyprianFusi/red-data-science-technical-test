@@ -1,0 +1,21 @@
+From: Sian Pryce <sian.pryce@mhclg.example>
+To: RED Duty Officer <red-duty@mhclg.example>
+Date: Mon, 12 Jan 2026 16:00:00 +0000
+Subject: RED National Sitrep 1
+Message-ID: <fd34ad2143266c814f4a@mhclg.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============BOUNDARY=="
+
+--===============BOUNDARY==
+Content-Type: text/plain; charset="utf-8"
+
+Storm Fenella - Status: Pre-incident monitoring
+Lead: Cumbria Resilience Forum
+
+--===============BOUNDARY==
+Content-Type: text/html; charset="utf-8"
+
+<html><body><p>Storm Fenella - Status: Pre-incident monitoring<br>Lead: Cumbria Resilience Forum</p></body></html>
+
+--===============BOUNDARY==--

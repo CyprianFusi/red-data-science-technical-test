@@ -1,0 +1,8 @@
+From: Ops <ops@example.com>
+To: Duty <duty@example.com>
+Subject: No date header
+Message-ID: <no-date-1@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Body with no Date header at all.
