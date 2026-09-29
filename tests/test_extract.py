@@ -57,3 +57,23 @@ def test_mentions_sorted_by_start_position():
     mentions = find_mentions("Storm Fenella affects the A591.", GAZETTEERS)
     starts = [m.start for m in mentions]
     assert starts == sorted(starts)
+
+
+def test_gazetteer_match_works_when_key_ends_in_closing_paren():
+    gaz = {
+        "site": _gaz(
+            "site", [("SITE-9001", "west coast main line (carlisle to lancaster)", [])]
+        )
+    }
+    mentions = find_mentions(
+        "The West Coast Main Line (Carlisle to Lancaster) remains disrupted.", gaz
+    )
+    assert any(m.matched_entity_id == "SITE-9001" for m in mentions)
+
+
+def test_fallback_regex_does_not_cross_newlines_into_a_signature_block():
+    text = "Kind regards,\n\nTom Ashworth\nLancashire LRF\n"
+    mentions = find_mentions(text, GAZETTEERS)
+    fallback = [m for m in mentions if m.matched_entity_id is None and m.entity_type == "lrf"]
+    assert len(fallback) == 1
+    assert fallback[0].surface_text == "Lancashire LRF"

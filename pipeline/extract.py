@@ -22,22 +22,22 @@ FALLBACK_PATTERNS: dict[str, list[re.Pattern]] = {
     "site": [
         re.compile(r"\bA\d{2,4}\b"),
         re.compile(
-            r"\b[A-Z][a-zA-Z'-]*(?:\s+[A-Z][a-zA-Z'-]*){0,3}\s+"
+            r"\b[A-Z][a-zA-Z'-]*(?:[ \t]+[A-Z][a-zA-Z'-]*){0,3}[ \t]+"
             r"(?:Rest Centre|Treatment Works|Primary School|Leisure Centre|Bridge)\b"
         ),
     ],
     "organisation": [
         re.compile(
-            r"\b[A-Z][a-zA-Z'&-]*(?:\s+[A-Z][a-zA-Z'&-]*){0,3}\s+"
+            r"\b[A-Z][a-zA-Z'&-]*(?:[ \t]+[A-Z][a-zA-Z'&-]*){0,3}[ \t]+"
             r"(?:Council|Police|Fire and Rescue Service|NHS Trust|Water)\b"
         ),
     ],
     "incident": [
-        re.compile(r"\bStorm\s+[A-Z][a-z]+\b"),
+        re.compile(r"\bStorm[ \t]+[A-Z][a-z]+\b"),
     ],
     "lrf": [
         re.compile(
-            r"\b[A-Z][a-zA-Z'-]*(?:\s+[A-Z][a-zA-Z'-]*){0,4}\s+"
+            r"\b[A-Z][a-zA-Z'-]*(?:[ \t]+[A-Z][a-zA-Z'-]*){0,4}[ \t]+"
             r"(?:Local Resilience Forum|LRF)\b"
         ),
     ],
@@ -52,7 +52,7 @@ def _gazetteer_candidates(text: str, gazetteers: dict[str, Gazetteer]) -> list[M
     candidates: list[Mention] = []
     for entity_type, gazetteer in gazetteers.items():
         for key in gazetteer.lookup:
-            pattern = re.compile(r"\b" + re.escape(key) + r"\b", re.IGNORECASE)
+            pattern = re.compile(r"(?<!\w)" + re.escape(key) + r"(?!\w)", re.IGNORECASE)
             for match in pattern.finditer(text):
                 candidates.append(
                     Mention(
