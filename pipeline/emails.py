@@ -1,6 +1,7 @@
 """Parse .eml files into plain text + headers for downstream extraction."""
 from __future__ import annotations
 
+import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from email import policy
@@ -56,7 +57,14 @@ def parse_eml(path: Path) -> ParsedEmail:
     if body_part is None:
         text = ""
     else:
-        content = body_part.get_content()
+        try:
+            content = body_part.get_content()
+        except (LookupError, UnicodeDecodeError):
+            # An unrecognized/garbled charset declaration must not abort
+            # the whole run over one email — fall back to a lossy decode
+            # of the raw payload instead of raising.
+            raw = body_part.get_payload(decode=True) or b""
+            content = raw.decode("utf-8", errors="replace")
         text = _html_to_text(content) if body_part.get_content_type() == "text/html" else content
         text = _strip_quoted_lines(text)
 
@@ -84,4 +92,10 @@ def parse_eml(path: Path) -> ParsedEmail:
 
 def parse_eml_folder(folder: Path) -> list[ParsedEmail]:
     paths = sorted(folder.glob("*.eml"), key=lambda p: p.name)
-    return [parse_eml(p) for p in paths]
+    parsed: list[ParsedEmail] = []
+    for path in paths:
+        try:
+            parsed.append(parse_eml(path))
+        except Exception as exc:  # noqa: BLE001 - one bad file must not abort the run
+            print(f"warning: skipping unparseable email {path}: {exc}", file=sys.stderr)
+    return parsed

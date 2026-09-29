@@ -55,6 +55,35 @@ def test_parse_strips_quoted_reply_lines():
     assert "Incident status: ACTIVE" not in parsed.text
 
 
+def test_parse_falls_back_to_replacement_decoding_on_unknown_charset():
+    """Regression: get_content() raises LookupError for a charset name
+    Python's codec registry doesn't recognize, which must not crash the
+    whole run over one malformed email."""
+    parsed = parse_eml(FIXTURES / "unknown_charset.eml")
+    assert "cannot be decoded" in parsed.text or "Body with an unrecognized charset" in parsed.text
+
+
+def test_parse_eml_folder_skips_unparseable_file_and_keeps_going(tmp_path):
+    good = tmp_path / "good.eml"
+    good.write_text(
+        "From: a@b.com\nTo: c@d.com\nDate: Mon, 12 Jan 2026 10:00:00 +0000\n"
+        "Subject: Fine\nMessage-ID: <good@b.com>\nContent-Type: text/plain; charset=\"utf-8\"\n\n"
+        "This one parses fine.\n",
+        encoding="utf-8",
+    )
+    bad = tmp_path / "bad.eml"
+    bad.write_text(
+        "From: a@b.com\nTo: c@d.com\nDate: Mon, 12 Jan 2026 10:00:00 +0000\n"
+        "Subject: Broken\nMessage-ID: <bad@b.com>\n"
+        "Content-Type: text/plain; charset=\"x-not-a-real-charset\"\n\n"
+        "Body with an unrecognized charset.\n",
+        encoding="utf-8",
+    )
+
+    parsed = parse_eml_folder(tmp_path)
+    assert {p.path.name for p in parsed} == {"good.eml", "bad.eml"}
+
+
 def test_parse_eml_folder_returns_all_files_sorted():
     parsed = parse_eml_folder(FIXTURES)
     assert [p.path.name for p in parsed] == sorted(
@@ -65,5 +94,6 @@ def test_parse_eml_folder_returns_all_files_sorted():
             "no_date.eml",
             "quoted_reply.eml",
             "bst_offset.eml",
+            "unknown_charset.eml",
         ]
     )
