@@ -2,6 +2,11 @@
 
 An information-extraction pipeline that reads incident-response `.eml` emails, resolves mentions of four entity types (LRF, incident, organisation, site) against reference lists, links them with relation types, and records every reported fact as a dated, source-attributed observation in a small SQLite database.
 
+## Screenshots
+
+### Observations table
+![Observations-table](https://raw.githubusercontent.com/CyprianFusi/red-data-science-technical-test/main/assets/ui_1.png)
+
 ## Setup
 
 Requires Python 3.13 and [`uv`](https://docs.astral.sh/uv/).

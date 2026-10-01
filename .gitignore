@@ -11,3 +11,6 @@ wheels/
 
 # Superpowers plan-execution workspace (ledgers, briefs, review packages)
 .superpowers/
+
+# Supplementary presentation deck, not part of the submission
+/presentation/
